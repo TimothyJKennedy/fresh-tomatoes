@@ -15,6 +15,8 @@ the people who _didn't_ buy a ticket through Fandango.
 [![No permissions](https://img.shields.io/badge/permissions-none-success)](manifest.json)
 ![Version](https://img.shields.io/badge/version-0.1.0-orange)
 
+<sub>⚠️ Not affiliated with Rotten Tomatoes in any way, and does not claim to be. See the [disclaimer](#disclaimer).</sub>
+
 </div>
 
 ---
@@ -125,10 +127,14 @@ stops updating, open an issue with the movie URL — the console diagnostic
 
 ## Disclaimer
 
-Fresh Tomatoes is an unofficial, fan-made tool. It is **not affiliated with,
-endorsed by, or connected to Rotten Tomatoes or Fandango.** "Rotten Tomatoes" is
-a trademark of its respective owner. All score data belongs to Rotten Tomatoes;
-this extension only re-slices numbers the page already ships to your browser.
+**Fresh Tomatoes is not affiliated with Rotten Tomatoes in any way and does not
+claim to be.** It is an independent, unofficial, fan-made tool that is **not
+affiliated with, endorsed by, sponsored by, or connected to Rotten Tomatoes or
+Fandango** or any of their subsidiaries or affiliates. "Rotten Tomatoes" and any
+related names, marks, and logos are trademarks of their respective owners and are
+used here for descriptive purposes only. All score data belongs to Rotten
+Tomatoes; this extension only re-slices numbers the page already ships to your
+browser.
 
 ## License
 

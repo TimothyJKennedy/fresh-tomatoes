@@ -27,6 +27,7 @@
 
   var computedScore = null; // Cached once successfully calculated.
   var loggedFailure = false; // Suppress repeated diagnostics across observer ticks.
+  var lastUrl = location.href; // Detect client-side navigation between movies.
 
   function parseCount(value) {
     if (typeof value === "number") {
@@ -174,7 +175,19 @@
     }
   }
 
+  // Rotten Tomatoes can swap movies via client-side navigation without a full
+  // reload. When the URL changes, discard the cached score so the next movie is
+  // recalculated from its own embedded data rather than reusing the old value.
+  function resetIfNavigated() {
+    if (location.href !== lastUrl) {
+      lastUrl = location.href;
+      computedScore = null;
+      loggedFailure = false;
+    }
+  }
+
   function update() {
+    resetIfNavigated();
     var score = calculateScore();
     if (score === null) {
       return;
